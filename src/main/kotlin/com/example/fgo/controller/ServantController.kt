@@ -9,6 +9,17 @@ class ServantController {
 
     @RequestMapping(value = "/1", method = arrayOf(RequestMethod.GET))
     fun getServant(): Servant {
-        return Servant("ましゅ・きりえらいと", 3)
+        val card = mutableMapOf("Q" to 1, "A" to 2, "B" to 2)
+        return Servant(
+                1,
+                "ましゅ・きりえらいと",
+                "シールダー",
+                3,
+                11516,
+                7815,
+                0,
+                card,
+                "A"
+                )
     }
 }
