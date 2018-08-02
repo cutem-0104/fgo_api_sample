@@ -4,6 +4,7 @@ class Servant(
         val no: Int,
         var name: String = "",
         val `class`: String = "",
+        val attribute: String = "",
         val rare: Int = 1,
         val hp: Int,
         val attack: Int,
